@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "app.com.cn.drawmap"
-        minSdkVersion 23
+        minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -20,5 +20,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/baidumapapi_v3_1_0.jar')
+    compile files('libs/locSDK_3.1.jar')
 }
